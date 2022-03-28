@@ -21,9 +21,9 @@ jobs:
       - name: list some key files
         run: ls -lrt
       - name: Install dependencies
-        run: dotnet restore ./src/API/API.csproj/
+        run: dotnet restore ./AOM.StudentManager/
       - name: Build
-        run: dotnet build --no-restore ./src/API/API.csproj/
+        run: dotnet build --no-restore ./AOM.StudentManager/
       
       - name: Set up QEMU        
         uses: docker/setup-qemu-action@v1
@@ -34,7 +34,9 @@ jobs:
       - name: Build and push
         id: docker_build
         uses: docker/build-push-action@v2
-        with:           
+        with:
+          context: ./AOM.StudentManager/
+          file: ./Dockerfile
           push: false
           tags: adhan2604/aomapi:latest       
           
