@@ -36,7 +36,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: ./AOM.StudentManager/src/API/Dockerfile
+          file: ./AOM.StudentManager/API/Dockerfile
           push: false
           tags: adhan2604/aomapi:latest       
           
