@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/AOM.StudentManager/.vs/AOM.StudentManager
+/AOM.StudentManager/src/API/bin/Debug/net5.0
+/AOM.StudentManager/src/API/obj
