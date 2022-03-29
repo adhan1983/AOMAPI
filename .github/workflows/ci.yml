@@ -37,6 +37,6 @@ jobs:
         with:          
           push: false
           tags: adhan2604/aomapi:latest       
-          path: src/API
+          context: ./src/API
           
     
