@@ -42,7 +42,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:          
           push: true                    
-          tags: adhan2604/github/app:latest
+          tags: adhan2604/github:app
           context: ./src/API
           
     
