@@ -34,10 +34,9 @@ jobs:
       - name: Build and push
         id: docker_build
         uses: docker/build-push-action@v2
-        with:
-          context: ./
-          file: ./Dockerfile
+        with:          
           push: false
           tags: adhan2604/aomapi:latest       
+          path: src/Api
           
     
