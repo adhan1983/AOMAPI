@@ -36,7 +36,9 @@ jobs:
         uses: docker/build-push-action@v2
         with:          
           push: false
-          tags: adhan2604/aomapi:latest       
+          username: adhan2604
+          password: ${{ secrets.DOCKER_SECRET_KEY }}
+          tags: adhan2604/aomapi:latest
           context: ./src/API
           
     
